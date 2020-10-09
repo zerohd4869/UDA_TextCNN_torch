@@ -1,0 +1,37 @@
+{
+    "cuda": "0,1",
+    "seed": 2020,
+    "lr": 1e-3,
+    "warmup": 0.01,
+    "do_lower_case": true,
+    "mode": "train_eval",
+    "uda_mode": true,
+
+    "total_steps": 1000,
+    "max_seq_length": 100,
+    "train_batch_size": 32,
+    "eval_batch_size": 32,
+
+    "unsup_ratio": 3,
+    "uda_coeff": 1,
+    "tsa": "linear_schedule",
+    "uda_softmax_temp": 0.85,
+    "uda_confidence_thresh": 0.45,
+
+    "data_parallel": false,
+    "need_prepro": false,
+    "sup_data_dir": "data/proc_data/train_demo/",
+    "unsup_data_dir": "data/proc_data/unsup_demo/bt-0.9/0/",
+    "eval_data_dir": "data/proc_data/train_demo/",
+
+    "model_file":null,
+    "pretrain_file":"Chinese_BERT_model/bert_model.ckpt",
+    "vocab":"Chinese_BERT_model/vocab.txt",
+    "task": "imdb",
+
+    "save_steps": 100,
+    "check_steps": 100,
+    "results_dir": "results",
+
+    "is_position": false
+}

@@ -1,0 +1,30 @@
+{
+    "cuda": "1",
+    "seed": 2020,
+    "lr": 1e-3,
+    "warmup": 0.01,
+    "do_lower_case": true,
+    "mode": "train_eval",
+    "uda_mode": false,
+
+    "total_steps": 1000,
+    "max_seq_length": 100,
+    "train_batch_size": 32,
+    "eval_batch_size": 32,
+
+    "data_parallel": false,
+    "need_prepro": false,
+    "sup_data_dir": "data/proc_data/train_demo/",
+    "eval_data_dir": "data/proc_data/train_demo/",
+
+    "model_file":null,
+    "pretrain_file":"Chinese_BERT_model/bert_model.ckpt",
+    "vocab":"Chinese_BERT_model/vocab.txt",
+    "task": "imdb",
+
+    "save_steps": 100,
+    "check_steps": 100,
+    "results_dir": "results_non",
+
+    "is_position": false
+}
